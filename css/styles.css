@@ -432,7 +432,7 @@ h3 {
   align-items: center;
 }
 
-.btn--hero {
+.btn.btn--hero {
   min-height: 50px;
   padding: 0.8rem 1.45rem;
   border-radius: 10px;
@@ -447,7 +447,7 @@ h3 {
 .hero__figure {
   margin: 0;
   position: relative;
-  border-radius: 48% 48% 18px 18px / 14% 14% 18px 18px;
+  border-radius: 999px 999px 22px 22px / 72px 72px 22px 22px;
   overflow: hidden;
   background: var(--cream-deep);
   aspect-ratio: 4 / 5;
