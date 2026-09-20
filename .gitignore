@@ -8,5 +8,7 @@ dist/
 *.log
 _tmp_home.html
 download-photos.ps1
+_candidates/
+_stock/
 .env
 .env.*
