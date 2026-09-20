@@ -26,9 +26,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css?v=4" />
 
   <script type="application/ld+json">
   {
@@ -69,8 +69,11 @@
   <a class="skip-link" href="#main">Перейти к содержанию</a>
 
   <header class="header" id="top">
-    <div class="header__inner">
-      <a class="logo" href="#top" aria-label="Карина Кормит — на главную">Карина Кормит</a>
+    <div class="shell header__inner">
+      <a class="logo" href="#top" aria-label="Карина Кормит — на главную">
+        <span class="logo__line">Карина</span>
+        <span class="logo__line">Кормит</span>
+      </a>
 
       <nav class="nav" aria-label="Основная навигация">
         <ul class="nav__list">
@@ -83,12 +86,6 @@
       </nav>
 
       <div class="header__actions">
-        <a class="social social--vk" href="https://vk.com/kp_bakery" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте">
-          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2zm3.01 15.27h-1.46c-.55 0-.72-.44-1.71-1.45-.86-.84-1.24-.95-1.45-.95-.3 0-.38.08-.38.49v1.33c0 .35-.11.56-1.04.56-1.54 0-3.24-.93-4.44-2.66-1.81-2.5-2.3-4.38-2.3-4.77 0-.21.08-.4.49-.4h1.46c.37 0 .51.17.65.56.71 2.05 1.9 3.85 2.39 3.85.18 0 .27-.09.27-.55v-2.13c-.06-.98-.58-1.07-.58-1.42 0-.17.14-.34.37-.34h2.3c.31 0 .42.17.42.53v2.87c0 .31.14.42.23.42.18 0 .33-.11.66-.44 1.02-1.14 1.75-2.92 1.75-2.92.1-.21.26-.4.63-.4h1.46c.44 0 .53.23.44.53-.18.86-1.95 3.34-1.95 3.34-.15.25-.21.36 0 .64.15.21.66.64 1 1.04.62.72 1.09 1.32 1.22 1.74.13.41-.07.62-.48.62z"/></svg>
-        </a>
-        <a class="social social--ig" href="https://www.instagram.com/kp_bakery/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.75a3.05 3.05 0 1 1 0-6.1 3.05 3.05 0 0 1 0 6.1zM17.4 7.12a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM12 2.5c-2.58 0-2.9.01-3.92.06-2.66.12-4.9 2.35-5.02 5.02-.05 1.01-.06 1.33-.06 3.92s.01 2.9.06 3.92c.12 2.66 2.36 4.9 5.02 5.02 1.02.05 1.34.06 3.92.06s2.9-.01 3.92-.06c2.67-.12 4.9-2.36 5.02-5.02.05-1.02.06-1.34.06-3.92s-.01-2.9-.06-3.92C20.82 4.91 18.59 2.68 15.92 2.56 14.9 2.51 14.58 2.5 12 2.5zm0 1.65c2.53 0 2.83.01 3.83.06 1.99.09 3.08 1.2 3.17 3.17.05 1 .06 1.29.06 3.82s-.01 2.82-.06 3.82c-.09 1.97-1.18 3.08-3.17 3.17-1 .05-1.3.06-3.83.06s-2.83-.01-3.83-.06c-2-.09-3.08-1.2-3.17-3.17-.05-1-.06-1.29-.06-3.82s.01-2.82.06-3.82c.09-1.97 1.18-3.08 3.17-3.17 1-.05 1.3-.06 3.83-.06z"/></svg>
-        </a>
         <a class="btn btn--primary header__cta" href="https://wa.me/79229950482" target="_blank" rel="noopener noreferrer">Написать нам</a>
         <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Открыть меню">
           <span></span><span></span><span></span>
@@ -97,7 +94,7 @@
     </div>
 
     <div class="mobile-nav" id="mobile-nav" hidden>
-      <nav aria-label="Мобильная навигация">
+      <nav class="shell" aria-label="Мобильная навигация">
         <a href="#top">Главная</a>
         <a href="#catalog">Торты</a>
         <a href="#categories">Десерты</a>
@@ -109,273 +106,307 @@
   </header>
 
   <main id="main">
+    <!-- HERO: compact editorial composition -->
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__content">
-        <p class="eyebrow">Кондитерская в Кирове</p>
-        <h1 id="hero-title" class="hero__title">
-          <span class="hero__title-serif">Торты и десерты</span>
-          <span class="hero__title-script">для ваших особенных моментов</span>
-        </h1>
-        <p class="hero__lead">Торты на заказ, порционные десерты и ароматный кофе. Ждём вас на Ленина, 79.</p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="https://wa.me/79229950482?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D1%82%D0%BE%D1%80%D1%82." target="_blank" rel="noopener noreferrer">Заказать торт</a>
-          <a class="btn btn--outline" href="#categories">Посмотреть десерты</a>
+      <div class="shell hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Кондитерская в Кирове</p>
+          <h1 id="hero-title" class="hero__title">
+            <span class="hero__display">Торты и десерты</span>
+            <span class="hero__script">для ваших особенных моментов</span>
+          </h1>
+          <p class="hero__lead">
+            Торты на заказ, порционные десерты и ароматный кофе.
+            Ждём вас на Ленина, 79.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://wa.me/79229950482?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D1%82%D0%BE%D1%80%D1%82." target="_blank" rel="noopener noreferrer">Заказать торт</a>
+            <a class="btn btn--ghost" href="#categories">Посмотреть десерты</a>
+          </div>
         </div>
-      </div>
-      <div class="hero__visual">
-        <div class="hero__glow" aria-hidden="true"></div>
-        <figure class="hero__figure">
-          <img
-            src="images/hero.jpg"
-            alt="Белый торт со сливочным кремом и свежей малиной"
-            width="1200"
-            height="1500"
-            fetchpriority="high"
-          />
-          <figcaption class="script-note script-note--hero" aria-hidden="true">С любовью к деталям ♡</figcaption>
-        </figure>
-      </div>
-    </section>
 
-    <section class="infobar" aria-label="Адрес и режим работы">
-      <div class="infobar__item">
-        <span class="infobar__icon" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
-        </span>
-        <div>
-          <p class="infobar__label">Адрес</p>
-          <p>Киров, ул. Ленина, 79<br /><span class="muted">(вход справа от «Классики»)</span></p>
-        </div>
-      </div>
-      <div class="infobar__item">
-        <span class="infobar__icon" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.25" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-        </span>
-        <div>
-          <p class="infobar__label">Часы работы</p>
-          <p>Ежедневно 10:00 – 19:00</p>
-        </div>
-      </div>
-      <div class="infobar__item">
-        <span class="infobar__icon" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 8.5h16v10.5H4V8.5z" stroke="currentColor" stroke-width="1.6"/><path d="M8 8.5V6.8A4 4 0 0 1 12 2.8a4 4 0 0 1 4 4v1.7" stroke="currentColor" stroke-width="1.6"/><path d="M4 12h16" stroke="currentColor" stroke-width="1.6"/></svg>
-        </span>
-        <div>
-          <p class="infobar__label">Вечерняя скидка</p>
-          <p>−20% на витрину с 17:00 до 19:00</p>
-        </div>
-      </div>
-      <div class="infobar__item infobar__item--contact">
-        <span class="infobar__icon" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7.5 4.5h3.2l1.1 4.2-2 1.2a12.5 12.5 0 0 0 5.3 5.3l1.2-2 4.2 1.1v3.2c0 .9-.7 1.7-1.6 1.7A14.5 14.5 0 0 1 4.5 6.1c0-.9.8-1.6 1.7-1.6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        </span>
-        <div>
-          <p class="infobar__label">Связь</p>
-          <p><a href="tel:+79229950482">+7 (922) 995-04-82</a><br />
-          <a href="https://wa.me/79229950482" target="_blank" rel="noopener noreferrer">Написать в WhatsApp</a></p>
+        <div class="hero__stage" aria-hidden="false">
+          <div class="hero__halo" aria-hidden="true"></div>
+          <p class="float-note float-note--hero" aria-hidden="true">С любовью к деталям ♡</p>
+          <figure class="hero__photo">
+            <img
+              src="images/hero.jpg"
+              alt="Белый торт со сливочным кремом и свежей малиной"
+              width="900"
+              height="1100"
+              fetchpriority="high"
+            />
+          </figure>
+          <figure class="hero__mini" aria-hidden="true">
+            <img src="images/prod-bento.jpg" alt="" width="280" height="280" loading="lazy" />
+          </figure>
+          <div class="hero__accent-dot" aria-hidden="true"></div>
         </div>
       </div>
     </section>
 
+    <!-- INFO STRIP -->
+    <section class="infobar" aria-label="Адрес, часы и скидка">
+      <div class="shell infobar__bar">
+        <div class="infobar__item">
+          <span class="infobar__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+          <div>
+            <p class="infobar__label">Адрес</p>
+            <p>Киров, ул. Ленина, 79</p>
+          </div>
+        </div>
+        <div class="infobar__divider" aria-hidden="true"></div>
+        <div class="infobar__item">
+          <span class="infobar__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.25" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <div>
+            <p class="infobar__label">Часы работы</p>
+            <p>Ежедневно 10:00 – 19:00</p>
+          </div>
+        </div>
+        <div class="infobar__divider" aria-hidden="true"></div>
+        <div class="infobar__item">
+          <span class="infobar__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 8.5h16v10.5H4V8.5z" stroke="currentColor" stroke-width="1.6"/><path d="M8 8.5V6.8A4 4 0 0 1 12 2.8a4 4 0 0 1 4 4v1.7" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+          <div>
+            <p class="infobar__label">Скидка · телефон</p>
+            <p>−20% 17:00–19:00 · <a href="tel:+79229950482">+7 922 995-04-82</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORY GALLERY -->
     <section class="categories" id="categories" aria-labelledby="categories-title">
-      <div class="section-head">
-        <p class="eyebrow">Что у нас есть</p>
-        <h2 id="categories-title">Выберите свой сладкий момент</h2>
-      </div>
-      <div class="categories__grid">
-        <a class="cat-card" href="#order">
-          <img src="images/cat-cakes.jpg" alt="Торт с розовым кремом и золотой надписью" width="600" height="750" loading="lazy" />
-          <span>Торты на заказ</span>
-        </a>
-        <a class="cat-card" href="#catalog">
-          <img src="images/cat-desserts.jpg" alt="Порционные кусочки торта со шпинатом и ягодной начинкой" width="600" height="750" loading="lazy" />
-          <span>Порционные десерты</span>
-        </a>
-        <a class="cat-card" href="#catalog">
-          <img src="images/cat-bento.jpg" alt="Бенто-торт в коробочке с надписью One" width="600" height="750" loading="lazy" />
-          <span>Бенто-торты</span>
-        </a>
-        <a class="cat-card" href="#catalog">
-          <img src="images/cat-minicakes.jpg" alt="Кексы и десерты на сладком столе" width="600" height="750" loading="lazy" />
-          <span>Мини-кейки</span>
-        </a>
-        <!-- TODO: заменить на реальное фото кофе из материалов кондитерской -->
-        <div class="cat-card cat-card--placeholder" role="img" aria-label="Кофе — фото скоро появится">
-          <div class="placeholder">
-            <span class="placeholder__title">Кофе</span>
-            <span class="placeholder__hint">Фото появится позже</span>
-          </div>
+      <div class="shell">
+        <h2 id="categories-title" class="visually-hidden">Категории</h2>
+        <div class="categories__row">
+          <a class="shot" href="#order">
+            <img src="images/cat-cakes.jpg" alt="" width="480" height="640" loading="lazy" />
+            <span class="shot__label">Торты на заказ</span>
+          </a>
+          <a class="shot" href="#catalog">
+            <img src="images/cat-desserts.jpg" alt="" width="480" height="640" loading="lazy" />
+            <span class="shot__label">Порционные десерты</span>
+          </a>
+          <a class="shot" href="#catalog">
+            <img src="images/cat-bento.jpg" alt="" width="480" height="640" loading="lazy" />
+            <span class="shot__label">Бенто-торты</span>
+          </a>
+          <a class="shot" href="#catalog">
+            <img src="images/cat-minicakes.jpg" alt="" width="480" height="640" loading="lazy" />
+            <span class="shot__label">Мини-кейки</span>
+          </a>
+          <a class="shot" href="#contacts">
+            <img src="images/cat-coffee.jpg" alt="" width="480" height="640" loading="lazy" />
+            <span class="shot__label">Кофе</span>
+          </a>
         </div>
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section class="about" id="about" aria-labelledby="about-title">
-      <div class="about__media">
-        <figure>
-          <img
-            src="images/about-cake.jpg"
-            alt="Бенто-торт с надписью «Все мечты сбудутся»"
-            width="700"
-            height="700"
-            loading="lazy"
-          />
-          <figcaption class="script-note script-note--about" aria-hidden="true">Все мечты сбудутся</figcaption>
-        </figure>
-      </div>
-      <div class="about__content">
-        <p class="eyebrow">Немного о нас</p>
-        <h2 id="about-title">Сладкое, которое хочется подарить</h2>
-        <p>
-          Мы готовим торты и десерты, которые хочется не только съесть, но и сфотографировать.
-          С 2016 года встречаем вас в кондитерской на Ленина, 79: витрина каждый день,
-          торты на любое торжество — под заказ.
-        </p>
-        <p>
-          Порционные десерты и кофе — если просто заглянули. Свадебные торты, бенто и мини-кейки —
-          если праздник уже намечается.
-        </p>
-        <a class="btn btn--outline" href="#contacts">Узнать больше</a>
+      <div class="shell about__grid">
+        <div class="about__media">
+          <div class="about__bloom" aria-hidden="true"></div>
+          <figure class="about__frame">
+            <img
+              src="images/about-cake.jpg"
+              alt="Бенто-торт с надписью «Все мечты сбудутся»"
+              width="700"
+              height="700"
+              loading="lazy"
+            />
+          </figure>
+          <p class="float-note float-note--about" aria-hidden="true">Все мечты сбудутся</p>
+        </div>
+        <div class="about__content">
+          <p class="eyebrow">Немного о нас</p>
+          <h2 id="about-title">Сладкое, которое хочется подарить</h2>
+          <p>
+            Мы готовим торты и десерты, которые хочется не только съесть, но и сфотографировать.
+            С 2016 года встречаем вас в кондитерской на Ленина, 79: витрина каждый день,
+            торты на любое торжество — под заказ.
+          </p>
+          <p>
+            Порционные десерты и кофе — если просто заглянули. Свадебные торты, бенто и мини-кейки —
+            если праздник уже намечается.
+          </p>
+          <a class="btn btn--ghost" href="#contacts">Узнать больше</a>
+        </div>
       </div>
     </section>
 
+    <!-- CATALOG -->
     <section class="catalog" id="catalog" aria-labelledby="catalog-title">
-      <div class="section-head section-head--split">
-        <div>
-          <p class="eyebrow">Наши десерты</p>
+      <div class="shell">
+        <div class="catalog__head">
           <h2 id="catalog-title">Вкусные моменты каждый день</h2>
+          <p class="float-note float-note--catalog" aria-hidden="true">Маленькие радости каждый день ♡</p>
         </div>
-        <p class="script-note script-note--inline" aria-hidden="true">Маленькие радости каждый день ♡</p>
+        <div class="catalog__grid">
+          <article class="product">
+            <div class="product__photo">
+              <img src="images/cat-minicakes.jpg" alt="Мини-кейки и кексы с кремом" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="product__meta">
+              <h3>Мини-кейки</h3>
+              <p class="price">от 1 500 ₽</p>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product__photo">
+              <img src="images/prod-cupcakes.jpg" alt="Набор капкейков и сладостей" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="product__meta">
+              <h3>Набор капкейков</h3>
+              <p class="price">от 1 200 ₽</p>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product__photo">
+              <img src="images/prod-bento.jpg" alt="Бенто-торт в коробочке" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="product__meta">
+              <h3>Бенто-торт</h3>
+              <p class="price">от 950 ₽</p>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product__photo">
+              <img src="images/prod-cake.jpg" alt="Торт на заказ с розовым кремом" width="600" height="750" loading="lazy" />
+            </div>
+            <div class="product__meta">
+              <h3>Торт</h3>
+              <p class="price">от 2 000 ₽</p>
+            </div>
+          </article>
+        </div>
+        <p class="catalog__note muted">Цены зависят от веса и оформления. Актуальную стоимость уточняйте при заказе.</p>
       </div>
-      <div class="catalog__grid">
-        <article class="product">
-          <img src="images/cat-minicakes.jpg" alt="Мини-кейки и кексы с кремом" width="600" height="750" loading="lazy" />
-          <div class="product__meta">
-            <h3>Мини-кейки</h3>
-            <p class="price">от 1 500 ₽</p>
-          </div>
-        </article>
-        <article class="product">
-          <img src="images/prod-cupcakes.jpg" alt="Набор капкейков и сладостей" width="600" height="750" loading="lazy" />
-          <div class="product__meta">
-            <h3>Набор капкейков</h3>
-            <p class="price">от 1 200 ₽</p>
-          </div>
-        </article>
-        <article class="product">
-          <img src="images/prod-bento.jpg" alt="Бенто-торт в коробочке" width="600" height="750" loading="lazy" />
-          <div class="product__meta">
-            <h3>Бенто-торт</h3>
-            <p class="price">от 950 ₽</p>
-          </div>
-        </article>
-        <article class="product">
-          <img src="images/prod-cake.jpg" alt="Торт на заказ с розовым кремом" width="600" height="750" loading="lazy" />
-          <div class="product__meta">
-            <h3>Торт</h3>
-            <p class="price">от 2 000 ₽</p>
-          </div>
-        </article>
-      </div>
-      <p class="catalog__note muted">Цены зависят от веса и оформления. Актуальную стоимость уточняйте при заказе.</p>
     </section>
 
+    <!-- ORDER + PROCESS -->
     <section class="order" id="order" aria-labelledby="order-title">
-      <div class="order__intro">
-        <p class="eyebrow">Торты на заказ</p>
-        <h2 id="order-title">Торт, который расскажет вашу историю</h2>
-        <p>Расскажите о поводе и пожеланиях — подберём вкус, размер и оформление.</p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="https://wa.me/79229950482?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D1%82%D0%BE%D1%80%D1%82." target="_blank" rel="noopener noreferrer">Обсудить торт</a>
-          <a class="text-link" href="#steps">Как сделать заказ? →</a>
+      <div class="shell order__grid">
+        <div class="order__copy">
+          <p class="eyebrow">Торты на заказ</p>
+          <h2 id="order-title">Торт, который расскажет вашу историю</h2>
+          <p>Расскажите о поводе и пожеланиях — подберём вкус, размер и оформление.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://wa.me/79229950482?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D1%82%D0%BE%D1%80%D1%82." target="_blank" rel="noopener noreferrer">Обсудить торт</a>
+            <a class="text-link" href="#steps">Как сделать заказ? →</a>
+          </div>
         </div>
-      </div>
-      <div class="order__visual">
-        <img src="images/order-cake.jpg" alt="Свадебный двухъярусный торт" width="700" height="900" loading="lazy" />
+        <figure class="order__photo">
+          <img src="images/order-cake.jpg" alt="Свадебный двухъярусный торт" width="700" height="900" loading="lazy" />
+        </figure>
       </div>
     </section>
 
     <section class="steps" id="steps" aria-labelledby="steps-title">
-      <h2 id="steps-title" class="visually-hidden">Как сделать заказ</h2>
-      <ol class="steps__list">
-        <li>
-          <span class="steps__num">1</span>
-          <p>Вы рассказываете о пожеланиях</p>
-        </li>
-        <li>
-          <span class="steps__num">2</span>
-          <p>Обсуждаем вкус и оформление</p>
-        </li>
-        <li>
-          <span class="steps__num">3</span>
-          <p>Согласовываем детали</p>
-        </li>
-        <li>
-          <span class="steps__num">4</span>
-          <p>Забираете готовый торт</p>
-        </li>
-      </ol>
+      <div class="shell">
+        <h2 id="steps-title" class="visually-hidden">Как сделать заказ</h2>
+        <ol class="steps__list">
+          <li>
+            <span class="steps__num">1</span>
+            <div>
+              <p class="steps__title">Пожелания</p>
+              <p class="steps__text">Вы рассказываете о поводе и идеях</p>
+            </div>
+          </li>
+          <li>
+            <span class="steps__num">2</span>
+            <div>
+              <p class="steps__title">Вкус</p>
+              <p class="steps__text">Обсуждаем начинку и оформление</p>
+            </div>
+          </li>
+          <li>
+            <span class="steps__num">3</span>
+            <div>
+              <p class="steps__title">Детали</p>
+              <p class="steps__text">Согласовываем дату и стоимость</p>
+            </div>
+          </li>
+          <li>
+            <span class="steps__num">4</span>
+            <div>
+              <p class="steps__title">Готово</p>
+              <p class="steps__text">Забираете торт на Ленина, 79</p>
+            </div>
+          </li>
+        </ol>
+      </div>
     </section>
 
+    <!-- CONTACTS -->
     <section class="contacts" id="contacts" aria-labelledby="contacts-title">
-      <div class="contacts__card">
-        <p class="eyebrow">Контакты</p>
-        <h2 id="contacts-title">Приходите или напишите нам</h2>
-        <ul class="contacts__list">
-          <li>
-            <strong>Адрес</strong>
-            <span>Киров, ул. Ленина, 79<br />(вход справа от «Классики»)</span>
-          </li>
-          <li>
-            <strong>Часы</strong>
-            <span>Ежедневно 10:00 – 19:00</span>
-          </li>
-          <li>
-            <strong>Телефон</strong>
-            <a href="tel:+79229950482">+7 (922) 995-04-82</a>
-          </li>
-          <li>
-            <strong>WhatsApp</strong>
-            <a href="https://wa.me/79229950482" target="_blank" rel="noopener noreferrer">Написать сообщение</a>
-          </li>
-          <li>
-            <strong>Email</strong>
-            <a href="mailto:kp_bakery@mail.ru">kp_bakery@mail.ru</a>
-          </li>
-          <li>
-            <strong>Соцсети</strong>
-            <span>
-              <a href="https://vk.com/kp_bakery" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
-              ·
-              <a href="https://www.instagram.com/kp_bakery/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </span>
-          </li>
-        </ul>
-        <div class="contacts__actions">
-          <a class="btn btn--primary" href="https://wa.me/79229950482" target="_blank" rel="noopener noreferrer">Написать в WhatsApp</a>
-          <a class="btn btn--outline" href="https://vk.me/kp_bakery" target="_blank" rel="noopener noreferrer">Сообщение ВК</a>
+      <div class="shell contacts__grid">
+        <div class="contacts__card">
+          <p class="eyebrow">Контакты</p>
+          <h2 id="contacts-title">Приходите или напишите нам</h2>
+          <ul class="contacts__list">
+            <li>
+              <strong>Адрес</strong>
+              <span>Киров, ул. Ленина, 79<br />(вход справа от «Классики»)</span>
+            </li>
+            <li>
+              <strong>Часы</strong>
+              <span>Ежедневно 10:00 – 19:00</span>
+            </li>
+            <li>
+              <strong>Телефон</strong>
+              <a href="tel:+79229950482">+7 (922) 995-04-82</a>
+            </li>
+            <li>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/79229950482" target="_blank" rel="noopener noreferrer">Написать сообщение</a>
+            </li>
+            <li>
+              <strong>Email</strong>
+              <a href="mailto:kp_bakery@mail.ru">kp_bakery@mail.ru</a>
+            </li>
+            <li>
+              <strong>Соцсети</strong>
+              <span>
+                <a href="https://vk.com/kp_bakery" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
+                ·
+                <a href="https://www.instagram.com/kp_bakery/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </span>
+            </li>
+          </ul>
+          <div class="contacts__actions">
+            <a class="btn btn--primary" href="https://wa.me/79229950482" target="_blank" rel="noopener noreferrer">Написать в WhatsApp</a>
+            <a class="btn btn--ghost" href="https://vk.me/kp_bakery" target="_blank" rel="noopener noreferrer">Сообщение ВК</a>
+          </div>
         </div>
-      </div>
-      <div class="contacts__map">
-        <iframe
-          title="Карина Кормит на карте — Ленина, 79, Киров"
-          src="https://yandex.ru/map-widget/v1/?ll=49.668000%2C58.603500&z=16&pt=49.668000%2C58.603500%2Cpm2rdm&l=map"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen
-        ></iframe>
+        <div class="contacts__map">
+          <iframe
+            title="Карина Кормит на карте — Ленина, 79, Киров"
+            src="https://yandex.ru/map-widget/v1/?ll=49.668000%2C58.603500&z=16&pt=49.668000%2C58.603500%2Cpm2rdm&l=map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer__inner">
-      <p class="logo">Карина Кормит</p>
+    <div class="shell footer__inner">
+      <p class="logo logo--footer">
+        <span class="logo__line">Карина</span>
+        <span class="logo__line">Кормит</span>
+      </p>
       <p class="muted">Кондитерская в Кирове · Ленина, 79</p>
       <p class="footer__copy muted">© <span id="year"></span> Карина Кормит</p>
-      <p class="footer__credit muted">
-        Фото героя:
-        <a href="https://unsplash.com/photos/CHSJv7hRXW8" target="_blank" rel="noopener noreferrer">Unsplash</a>
-      </p>
     </div>
   </footer>
 

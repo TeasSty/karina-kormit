@@ -32,7 +32,7 @@
   }
 
   const revealEls = document.querySelectorAll(
-    ".categories, .about, .catalog, .order, .steps, .contacts, .infobar"
+    ".infobar, .categories, .about, .catalog, .order, .steps, .contacts"
   );
   revealEls.forEach((el) => el.classList.add("reveal"));
 
