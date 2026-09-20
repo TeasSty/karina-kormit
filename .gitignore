@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
+dist/
+.vscode/
+.idea/
+*.log
+_tmp_home.html
+download-photos.ps1
+.env
+.env.*
