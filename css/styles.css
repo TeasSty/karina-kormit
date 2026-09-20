@@ -594,14 +594,6 @@ h3 {
   color: var(--muted);
 }
 
-.cat-card--placeholder > span {
-  position: absolute;
-  left: 0.9rem;
-  bottom: 0.9rem;
-  z-index: 1;
-  font-weight: 600;
-}
-
 /* About */
 .about {
   display: grid;
